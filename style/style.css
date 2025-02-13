@@ -58,7 +58,7 @@ body {
 }
 
 .four .text-box {
-  width: 800px;
+  width: 750px;
   margin: 0 auto;
   border: 3px solid #aaa;
   border-radius: 5px;
@@ -233,10 +233,6 @@ body {
   z-index: 3;
   cursor: pointer;
 }
-.girl-dp {
-    transform: scale(1);
-    transition: transform 2s ease-in-out 1s; /* 2s transition with 10s delay */
-}
 
 /* Media Queries */
 @media screen and (max-height: 1000px) {
@@ -301,5 +297,17 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(20deg);
+  }
+  100% {
+    transform: rotateY(-20deg);
   }
 }
